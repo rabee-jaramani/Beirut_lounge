@@ -36,7 +36,6 @@ body
 .first-scene
     img
         width: 100%
-        margin-top: 50%
         animation: logo_anim_1 7s  .5s
         transition: .5s
         opacity: 0
@@ -54,8 +53,7 @@ body
 
 // to prevent animation mobile view
 @media ( min-width: 651px )
-    #first_screen
-        margin-top: 50%
+
     @keyframes navlinks_anim
         0%
             margin-top: -400px
@@ -106,6 +104,9 @@ body
             &:hover
                 @include link_hover()
 @media ( max-width:650px  )
+    .first-scene
+        img
+            margin-top: 50%
     .mobile-menu-icon
         display: block !important
     
