@@ -10,7 +10,7 @@ export default function Website() {
 
  
     return (
-            <div className='website'>
+            <div className='website hide'>
                 <Navbar/>
                 <Header/>
                 <Story/>
