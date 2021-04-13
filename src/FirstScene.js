@@ -3,7 +3,7 @@ import logo from './images/logo.png'
 export default function FirstScene() {
     return (
              <div className='first-scene'>
-                 <img src={logo} alt='logo'/>
+                 <img id='first_screen' src={logo} alt='logo'/>
             </div>
     )
 }
