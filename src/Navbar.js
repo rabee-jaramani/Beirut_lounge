@@ -9,7 +9,7 @@ export default function Navbar() {
    
               <div className='navbar'>
                 <div className='logo add-anim-for-logo-sm'><img src={logo_sm} alt=''/></div>
-                <div className='navlinks'>
+                <div className='navlinks' onClick={show_mobile_menu}>
                     <div className='nav-link add-anim-for-homeLink'>Home</div>
                     <div className='nav-link add-anim-for-foodLink'>Food</div>
                     <div className='nav-link add-anim-for-vibesLink'>Vibes</div>
