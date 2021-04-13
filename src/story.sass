@@ -1,0 +1,33 @@
+.story
+    position: relative
+    display: flex
+    width: 98%
+    justify-content: space-around
+    margin-top: 100px
+    @include centering()
+    img
+        width: 50%
+        box-shadow: 0px 0px 10px 2px #ffffff
+    .story-msg
+        padding: 10px
+        @include qoutes()
+        font-size: 25px
+        div
+            margin-top: 20px
+            margin-bottom: 20px
+            font-family: $fontFamily_p
+            font-size: 20px
+            letter-spacing: .1vw
+@media ( max-width: 1300px )
+    .story
+        flex-direction: column
+    .story-img
+        width: 100% !important
+        @include centering()
+@media ( max-width: 600px )
+    .story-msg
+        font-size: 4vw !important
+        div
+            font-size: 16px !important
+
+    

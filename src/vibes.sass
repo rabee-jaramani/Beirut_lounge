@@ -1,0 +1,42 @@
+.vibes
+    margin-top: 20px
+    margin-bottom: 20px
+    width: 98%
+    @include centering()
+    overflow-y: hidden
+    .vibes-title
+        width: 60%
+        @include centering()
+        color: white
+        text-align: center
+        font-family: $fontFamily_p
+        font-size: 1.5rem
+        letter-spacing: .1rem
+    .vibes-col
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        height: 40vw
+        overflow: scroll
+        img
+            width: 50vw
+            margin: 10px 0
+
+.add-movment-vibes
+    animation: move_vibes 30s linear infinite
+
+@keyframes move_vibes
+    100%
+        transform: translateY(-150vw)
+
+@media ( max-width: 800px  )
+    .vibes
+        .vibes-title
+            width: 95%
+            @include centering()
+            font-size: 1rem
+        .vibes-col
+            height: 80vw
+            img
+                width: 90vw

@@ -1,0 +1,127 @@
+$fontFamily: 'RocknRoll One', sans-serif
+$fontFamily_p: 'Manrope', sans-serif
+$mainColor: #4D014A
+$secondColor: #F1C659
+@mixin link_hover()
+    color: $mainColor
+    background-color: $secondColor
+    cursor: pointer
+@mixin qoutes()
+        color: white
+        text-shadow: 5px 5px 12px #000000
+        font-size: 4vw
+        font-family: 'RocknRoll One', sans-serif
+        text-align: center
+        width: 95%
+@mixin centering()
+    margin-left: 50%
+    transform: translate(-50%)
+    
+    
+body
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    overflow-x: hidden
+    background-color: $mainColor
+    transition: .5s
+    ::-webkit-scrollbar
+        display: none
+.website
+    position: relative
+.hide
+    display: none
+.pause-anim
+    animation-play-state: paused !important
+.first-scene
+    img
+        width: 100%
+        animation: logo_anim_1 7s  .5s
+        transition: .5s
+        opacity: 0
+        z-index: 0
+
+// for first scene
+@keyframes logo_anim_1
+    0%
+        opacity: 0 
+    50%
+        opacity: 1  
+        z-index: 100
+    100%
+        opacity: 0
+
+// to prevent animation mobile view
+@media ( min-width: 651px )
+    @keyframes navlinks_anim
+        0%
+            margin-top: -400px
+
+        100%
+            margin-top: 0
+    .add-anim-for-homeLink
+        animation: navlinks_anim 1s
+    .add-anim-for-foodLink
+        animation: navlinks_anim 1.5s
+    .add-anim-for-vibesLink
+        animation: navlinks_anim  2s
+    .add-anim-for-theMenuLink
+        animation: navlinks_anim 2.5s  
+    .add-anim-for-logo-sm
+        animation: navlinks_anim 1s  
+
+    
+.navbar
+    position: fixed
+    top: 0
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    z-index: 100
+    .mobile-menu-icon
+        display: none
+        color: $secondColor
+        font-size: 2rem
+        padding: 20px
+        &:hover
+            @include link_hover()        
+    .navlinks
+        display: flex
+        align-items: center
+        justify-content: center
+        // background-color: $mainColor
+        .nav-link
+            color: $secondColor
+            text-shadow: 5px 5px 12px #000000
+            background: rgba(39, 39, 39, 0.424)
+            padding: 20px
+            font-family: $fontFamily
+            font-size: 1.2rem
+            letter-spacing: .08rem
+            transition: .5s
+            &:hover
+                @include link_hover()
+@media ( max-width:650px  )
+    .mobile-menu-icon
+        display: block !important
+    
+    .navlinks
+        flex-direction: column
+        position: absolute
+        margin-top: -400px
+        margin-left: 50%
+        transform: translate(-50%)
+        transition: .5s
+        width: 100%
+        background: $mainColor
+        div
+            background: transparent !important
+    .show-mobile-menu
+        margin-top: 400px
+@import "./header" 
+@import ./story
+@import ./food
+@import ./vibes
+
+        
