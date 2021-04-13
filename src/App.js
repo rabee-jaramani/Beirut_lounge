@@ -11,18 +11,21 @@ class App extends React.Component {
     this.state= {loading:false}
   }
 
-
+  delay_func(){
+    setTimeout(() => {
+      document.querySelector('.first-scene').classList.add('hide')
+      document.querySelector('.website').classList.remove('hide')
+    }, 7000);
+    
+  }
 componentDidMount(){
   document.addEventListener('DOMContentLoaded', (event) => {
     //the event occurred
     this.setState({
       loading:true
     })
-    setTimeout(() => {
-      document.querySelector('.first-scene').classList.add('hide')
-      document.querySelector('.website').classList.remove('hide')
-    }, 7000);
-    
+    this.delay_func()
+   
   })
   // for first scene
 
