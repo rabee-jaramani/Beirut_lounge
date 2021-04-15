@@ -37,12 +37,15 @@ render(){
     {
       this.state.loading ? 
         <div className="App">
-            <FirstScene/> 
+            <FirstScene/>
             <Website/>
         </div> :
         <h1>Loading</h1>
     }
         
+         {/* <div className="App">
+         <Website/>
+         </div> */}
     </>
   );
 }

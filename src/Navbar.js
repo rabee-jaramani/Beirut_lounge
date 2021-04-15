@@ -1,7 +1,9 @@
 import React from 'react'
 import logo_sm from './images/logo_sm.png'
+// import { $ }  from 'react-jquery-plugin'
+
 export default function Navbar() {
-    
+
     function show_mobile_menu() {
         document.querySelector('.navlinks').classList.toggle('show-mobile-menu')  
         }
@@ -10,10 +12,11 @@ export default function Navbar() {
               <div className='navbar'>
                 <div className='logo add-anim-for-logo-sm'><img src={logo_sm} alt=''/></div>
                 <div className='navlinks' onClick={show_mobile_menu}>
-                    <div className='nav-link add-anim-for-homeLink'>Home</div>
-                    <div className='nav-link add-anim-for-foodLink'>Food</div>
-                    <div className='nav-link add-anim-for-vibesLink'>Vibes</div>
-                    <div className='nav-link add-anim-for-theMenuLink'>The Menu</div>
+                    <a className='nav-link add-anim-for-homeLink' href='#home'>Home</a>
+                    <a className='nav-link add-anim-for-homeLink' href='#story'>Story</a>
+                    <a className='nav-link add-anim-for-foodLink'href='#food' >Food</a>
+                    <a className='nav-link add-anim-for-vibesLink' href='#vibes'>Vibes</a>
+                    <a className='nav-link add-anim-for-theMenuLink' href='#menu'>The menu</a>
                 </div>
                 <i onClick={show_mobile_menu} class="fas fa-utensils mobile-menu-icon"></i>
 

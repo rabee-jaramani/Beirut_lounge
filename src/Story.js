@@ -12,7 +12,7 @@ export default class Story extends React.Component {
 // }
 render(){
     return (
-        <div className='story'>
+        <div className='story' id='story'>
             <div className='story-msg'>
                     ...قصتنا <br/>
                     حضارة بيروت عبارة عن مزيج من الحضارات المتنوعة التي مرت بها على مر الزمان …

@@ -24,7 +24,7 @@ mouse_out(){
 }
     render(){
     return (
-        <div className='food'>
+        <div className='food' id='food'>
             <div className='food-title'>
             !بيروت لاونج <br/>
                     بكل بساطة لأنو دافعنا الأول هو رضاكم , بيروت لاونج بيقدم أشهى الأطباق اللبنانية والمشاوي بالاضافة لسهرات يومية مميزة من الطرب والأجواء البيروتية الحلوة

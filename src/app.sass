@@ -25,6 +25,7 @@ body
     overflow-x: hidden
     background-color: $mainColor
     transition: .5s
+    scroll-behavior: smooth !important
     ::-webkit-scrollbar
         display: none
 .website
@@ -52,7 +53,7 @@ body
         opacity: 0
 
 // to prevent animation mobile view
-@media ( min-width: 651px )
+@media ( min-width: 801px )
 
     @keyframes navlinks_anim
         0%
@@ -103,7 +104,9 @@ body
             transition: .5s
             &:hover
                 @include link_hover()
-@media ( max-width:650px  )
+            &:visited
+            color: $secondColor
+@media ( max-width:800px  )
     .first-scene
         img
             margin-top: 50%
@@ -113,16 +116,16 @@ body
     .navlinks
         flex-direction: column
         position: absolute
-        margin-top: -400px
+        margin-top: -600px
         margin-left: 50%
         transform: translate(-50%)
         transition: .5s
         width: 100%
         background: $mainColor
-        div
+        a
             background: transparent !important
     .show-mobile-menu
-        margin-top: 50%
+        margin-top: 55%
 @import "./header" 
 @import ./story
 @import ./food

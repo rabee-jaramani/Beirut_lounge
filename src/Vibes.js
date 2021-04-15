@@ -24,7 +24,7 @@ export default function Vibes() {
         });
     }
     return (
-        <div className='vibes'>
+        <div className='vibes' id='vibes'>
             <div className='vibes-title'>
                 <br/>
                 Nothing will make us proud more than seeing satisfaction

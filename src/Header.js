@@ -6,7 +6,7 @@ export default function Header() {
     }, 5000);
     return (
         <>
-            <div className='header'>
+            <div className='header' id='home'>
                 <div className='qoute'> 
                  <div>CAFE and RESTAURANT</div>
                 Our mission is to provide an unforgetable experience
