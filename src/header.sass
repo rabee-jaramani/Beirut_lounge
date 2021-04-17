@@ -1,11 +1,11 @@
 .header
     position: relative
     height: 100vh
-    // background-image: url("./images/header_img.jpg")
+    background-image: url("./images/header_1.jpg")
     background-size: cover
     background-repeat: no-repeat
-    transition: .2s
-    animation: header_anim 5s
+    transition: .5s
+
     .qoute
         position: absolute
         top: 10vw
@@ -14,13 +14,13 @@
         div
             font-size: 3vw
        
-@keyframes header_anim
-    0%
-        opacity: 0  
-    100%
-        opacity: 1
+// @keyframes header_anim
+//     0%
+//         opacity: 0  
+//     100%
+//         opacity: 1
 .header-bg-changer
-    animation: change_header_background 60s infinite !important
+    animation: change_header_background 10s infinite !important
 @keyframes change_header_background
     0%
         background-image: url("./images/header_1.jpg")
