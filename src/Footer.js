@@ -17,7 +17,7 @@ export default function Footer() {
             </div>
             <div className='reservation'>
                 <h5>Reservation:</h5>
-                <div>0097142555330</div>
+                <a href="tel:0097142555330">042555330</a>
             </div>
             <div className='open-hours'>
                 <h5>Open Hours:</h5>

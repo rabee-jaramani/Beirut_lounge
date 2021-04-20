@@ -29,11 +29,11 @@
             margin-bottom: 20px
         a
             @include link_style()
-            padding: 1.2rem
+            
     .reservation
         h5
-            margin-bottom: 5px
-        div
+            margin-bottom: 20px
+        a
             @include link_style()
             width: 10rem
     .open-hours
@@ -57,19 +57,18 @@
             
 @media ( max-width: 950px )
     .footer
-        height: auto
-        padding: 0 
+        height: auto 
         flex-direction: column
         text-align: center
         div
-            @include centering()
+            // @include centering()
         h5
             margin-top: 30px
-        .find-us
-            a
-                font-size: 13px
-                width: 100%
         .reservation
+            @include centering()
             margin-top: 20px
+        .open-hours
+            div
+                @include centering()
     
 

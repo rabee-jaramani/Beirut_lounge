@@ -27,9 +27,7 @@ componentDidMount(){
     this.delay_func()
    
   })
-  // for first scene
-
-
+  
 }
 render(){
   return (
