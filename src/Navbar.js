@@ -1,6 +1,5 @@
 import React from 'react'
 import logo_sm from './images/logo_sm.png'
-// import { $ }  from 'react-jquery-plugin'
 
 export default function Navbar() {
 
@@ -17,6 +16,7 @@ export default function Navbar() {
                     <a className='nav-link add-anim-for-foodLink'href='#food' >Food</a>
                     <a className='nav-link add-anim-for-vibesLink' href='#vibes'>Vibes</a>
                     <a className='nav-link add-anim-for-theMenuLink' href='#menu'>The menu</a>
+                    <a className='nav-link add-anim-for-footer' href='#footer'>Contact Us</a>
                 </div>
                 <i onClick={show_mobile_menu} class="fas fa-utensils mobile-menu-icon"></i>
 

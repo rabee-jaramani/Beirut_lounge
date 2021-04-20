@@ -2,13 +2,11 @@ import React from 'react'
 
 export default function Footer() {
     return (
-        <div className='footer'>
+        <div className='footer' id='footer'>
             <div className='find-us'>
                 <h5>Find Us:</h5>
                 <a 
-                href='https://www.google.com/maps/place/Beirut+Lounge+
-                Restaurant+%26+Cafe/@25.2473912,55.3415521,17z/data=!4m5
-                !3m4!1s0x3e5f5d198c955555:0xf7f2fd6fd42ae5a2!8m2!3d25.2468387!4d55.3415694'
+                href='https://maps.google.com/?q=Beirut Lounge  Restaurant & Cafe'
                 target='_blank'
                 rel='noreferrer'
                 >

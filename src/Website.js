@@ -5,6 +5,7 @@ import Header from './Header'
 import Navbar from './Navbar'
 import Vibes from './Vibes'
 import Footer from './Footer'
+import TheMenu from './The_menu'
 
 
 export default function Website() {
@@ -17,6 +18,7 @@ export default function Website() {
                 <Story/>
                 <Food/>
                 <Vibes/>
+                <TheMenu/>
                 <Footer/>
       
                

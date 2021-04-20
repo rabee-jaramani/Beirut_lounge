@@ -1,0 +1,60 @@
+.the-menu
+    position: relative
+    margin-top: 5rem
+    width: 100vw
+    height: 50vw
+    text-align: center
+    @include centering()
+    background-color: white
+    .title
+        font-size: 3vw
+        color: $mainColor
+    .img
+        // background-image: url('./images/menu/1.jpg')
+        background-size: cover
+        width: 60vw
+        height: 40vw
+        @include centering()
+        transition: .5s
+    i
+        font-size: 5vw
+        color: #4d014ab6
+        cursor: pointer
+        &:hover
+            color: $mainColor
+    .fa-arrow-circle-right
+        position: absolute
+        right: 15vw
+        bottom: 23vw
+    .fa-arrow-circle-left
+        position: absolute
+        left: 15vw
+        bottom: 23vw
+.img1
+    background-image: url('./images/menu/1.jpg')
+.img2
+    background-image: url('./images/menu/2.jpg')
+.img3
+    background-image: url('./images/menu/3.jpg')
+.img4
+    background-image: url('./images/menu/4.jpg')
+.img5
+    background-image: url('./images/menu/5.jpg')
+
+@media ( max-width: 900px )
+    .the-menu
+        height: 80vw
+        .title
+            font-size: 5vw
+        .img
+            width: 95vw
+            height: 60vw
+        i
+            font-size: 8vw
+        .fa-arrow-circle-right
+            right: 40vw
+            bottom: 3vw
+        .fa-arrow-circle-left
+            left: 40vw
+            bottom: 3vw
+    

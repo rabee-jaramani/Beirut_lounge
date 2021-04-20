@@ -10,13 +10,11 @@ class App extends React.Component {
     super(props)
     this.state= {loading:false}
   }
-
   delay_func(){
     setTimeout(() => {
       document.querySelector('.first-scene').classList.add('hide')
       document.querySelector('.website').classList.remove('hide')
     }, 7000);
-    
   }
 componentDidMount(){
   document.addEventListener('DOMContentLoaded', (event) => {
@@ -25,9 +23,7 @@ componentDidMount(){
       loading:true
     })
     this.delay_func()
-   
   })
-  
 }
 render(){
   return (
@@ -40,8 +36,8 @@ render(){
         </div> :
         <h1>Loading</h1>
     }
-        
-         {/* <div className="App">
+{/*         
+         <div className="App">
          <Website/>
          </div> */}
     </>

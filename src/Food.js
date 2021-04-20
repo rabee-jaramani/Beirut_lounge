@@ -47,16 +47,6 @@ mouse_out(){
                          />
                     })
                 }
-                {/* <img className='a add-movment' src={a} alt=''/>
-                <img className='b add-movment' src={b} alt=''/>
-                <img className='c add-movment' src={c} alt=''/>
-                <img className='d add-movment' src={d} alt=''/>
-                <img className='a add-movment' src={a} alt=''/>
-                <img className='b add-movment' src={b} alt=''/>
-                <img className='c add-movment' src={c} alt=''/>
-                <img className='d add-movment' src={d} alt=''/>
-                <img className='a add-movment' src={a} alt=''/>
-                <img className='b add-movment' src={b} alt=''/> */}
 
             </div>
            
