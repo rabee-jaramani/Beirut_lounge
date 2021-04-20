@@ -1,0 +1,75 @@
+@mixin link_style()
+            background-color: $secondColor
+            padding: 1rem
+            transition: .5s
+            &:visited
+                color: $mainColor
+            &:hover
+                background-color: $mainColor
+                color: $secondColor
+                border: $secondColor solid 1px
+@mixin h5_title()
+    color: white 
+.footer
+    background-color: $mainColor
+    height: 30vh
+    padding: 5vw 2vw
+    width: 100%
+    display: flex
+    justify-content: space-between
+    width: 90%
+    background-image: url(./images/header_5.jpg)
+    background-size: cover
+
+    @include centering()
+    h5
+        @include h5_title()
+    .find-us
+        h5
+            margin-bottom: 20px
+        a
+            @include link_style()
+            padding: 1.2rem
+    .reservation
+        h5
+            margin-bottom: 5px
+        div
+            @include link_style()
+            width: 10rem
+    .open-hours
+        h5
+            margin-bottom: 5px
+        div
+            @include link_style()
+            width: 16rem
+    .social-media
+        h5
+            margin-bottom: 5px
+        i
+            font-size: 3rem
+            margin-left: 10px
+            color: $secondColor
+            cursor: pointer
+            transition: .5s
+            &:hover
+                transform: scale(1.2)
+                color: white
+            
+@media ( max-width: 950px )
+    .footer
+        height: auto
+        padding: 0 
+        flex-direction: column
+        text-align: center
+        div
+            @include centering()
+        h5
+            margin-top: 30px
+        .find-us
+            a
+                font-size: 13px
+                width: 100%
+        .reservation
+            margin-top: 20px
+    
+

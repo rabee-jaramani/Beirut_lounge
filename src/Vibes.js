@@ -9,7 +9,7 @@ import g from './images/vibes/7.jpg'
 import h from './images/vibes/8.jpg'
 
 export default function Vibes() {
-    var list=[a,b,c,d,e,f,g,h]
+    var list=[a,b,c,d,e,f,g,h,a,b,c,d,e,f,g,h,a,b,c,d,e,f,g,h,a,b,c,d,e,f,g,h,a,b,c,d,e,f,g,h]
     function mouse_over() {
         list=document.querySelectorAll('.add-movment-vibes')
         list.forEach(element => {
@@ -42,14 +42,6 @@ export default function Vibes() {
                             src={e} alt=''/>
                         })
                     }
-                        {/* <img className='' src={a} alt=''/>
-                        <img className='' src={b} alt=''/>
-                        <img className='' src={c} alt=''/>
-                        <img className='' src={d} alt=''/>
-                        <img className='' src={e} alt=''/>
-                        <img className='' src={f} alt=''/>
-                        <img className='' src={g} alt=''/>
-                        <img className='' src={h} alt=''/> */}
                 </div>
        
         </div>
