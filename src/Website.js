@@ -11,7 +11,7 @@ export default function Website() {
 
  
     return (
-            <div className='website' id='home'>
+            <div className='website hide' id='home'>
                 <Navbar/>
                 <Header/>
                 <Story/>
